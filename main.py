@@ -28,8 +28,8 @@ battery_voltage = int(input("Enter Battery Voltage: "))
 coolant_status = check_status(coolant_temp, RANGES["coolant"]["normal"], RANGES["coolant"]["warning"])
 oil_temp_status = check_status(oil_temp, RANGES["oil_temp"]["normal"], RANGES["oil_temp"]["warning"])
 oil_pressure_status = check_status(oil_pressure, RANGES["oil_pressure"]["normal"], RANGES["oil_pressure"]["warning"])
-transmission_temp_status = check_status(transmission_temp, RANGES["transmission_temp"]["normal"], RANGES["transmission_temp"]["warning"]))
-battery_volt_status = check_status(battery_voltage RANGES["battery_voltage"]["normal"], RANGES["battery_voltage"]["warning"])
+transmission_temp_status = check_status(transmission_temp, RANGES["transmission_temp"]["normal"], RANGES["transmission_temp"]["warning"])
+battery_voltage_status = check_status(battery_voltage, RANGES["battery_voltage"]["normal"], RANGES["battery_voltage"]["warning"])
 
 ##output
 
