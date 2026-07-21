@@ -35,4 +35,4 @@ transmission_temp_status = check_status(transmission_temp, RANGES["transmission_
 print(f"Coolant: {coolant_temp} - {coolant_status}")
 print(f"Oil Temp: {oil_temp} - {oil_temp_status}")
 print(f"Oil Pressure: {oil_pressure} - {oil_pressure_status}")
-print(f"Transmission: {transmission_temp} - {transmission_status}")
+print(f"Transmission: {transmission_temp} - {transmission_temp_status}")
