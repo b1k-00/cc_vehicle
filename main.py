@@ -15,19 +15,24 @@ def check_status (reading, normal_range, warning_range):
 
 
 
-## daashboard reading
-
 ##input details
 
+coolant_temp = int(input("Enter Coolant Temp: "))
+oil_temp = int(input("Enter Coolant Temp: "))
+oil_pressure = int(input("Enter Coolant Temp: "))
+transmission_temp = int(input("Enter Coolant Temp: "))
+
+#status checks
+
+coolant_status = check_status(coolant_temp, RANGES["coolant"]["normal"], RANGES["coolant"]["warning"])
+oil_temp_status = check_status(oil_temp, RANGES["oil_temp"]["normal"], RANGES["oil_temp"]["warning"])
+oil_pressure_status = check_status(oil_pressure, RANGES["oil_pressure"]["normal"], RANGES["oil_pressure"]["warning"])
+transmission_temp_status = check_status(transmission_temp, RANGES["transmission_temp"]["normal"], RANGES["transmission_temp"]["warning"])
 
 
+##output
 
-coolant_temp = 210
-oil_temp = 210
-oil_pressure = 220
-transmission_temp = 180
-
-print("Coolant Temp:", coolant_temp)
-print("Oil Temp:", oil_temp)
-print("Oil Pressure", oil_pressure)
-print("Transmission Temp:", transmission_temp)
+print(f"Coolant: {coolant_temp} - {coolant_status}")
+print(f"Oil Temp: {oil_temp} - {oil_temp_status}")
+print(f"Oil Pressure: {oil_pressure} - {oil_pressure_status}")
+print(f"Transmission: {transmission_temp} - {transmission_status}")
